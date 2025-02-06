@@ -1,0 +1,25 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+POST http://localhost:1337/techs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IngwMDAwMCIsInN1YiI6IngwMDAwMCIsImp0aSI6ImI1YjI1OTlmIiwicm9sZSI6Im1hbmFnZXIiLCJhdWQiOlsiaHR0cDovL2xvY2FsaG9zdDo1NDgxNyIsImh0dHBzOi8vbG9jYWxob3N0OjAiLCJodHRwOi8vbG9jYWxob3N0OjEzMzciXSwibmJmIjoxNzM4ODc3ODAzLCJleHAiOjE3NDY1Njc0MDMsImlhdCI6MTczODg3NzgwNSwiaXNzIjoiZG90bmV0LXVzZXItand0cyJ9.kFseikUQ92MFWi5Q0-4NCHfFaicRswj-8VMYtCsCRqA
+Content-Type: application/json
+{
+    "Name": "Jack Knox",
+    "Email": "test@mail.com",
+    "Phone": null
+}
+
+###
+
+POST http://localhost:1337/techs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IngwMDAwMCIsInN1YiI6IngwMDAwMCIsImp0aSI6ImJiMGI3NmFlIiwicm9sZSI6Im5vdC1tYW5hZ2VyIiwiYXVkIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NTQ4MTciLCJodHRwczovL2xvY2FsaG9zdDowIiwiaHR0cDovL2xvY2FsaG9zdDoxMzM3Il0sIm5iZiI6MTczODg3ODM0MCwiZXhwIjoxNzQ2NTY3OTQwLCJpYXQiOjE3Mzg4NzgzNDEsImlzcyI6ImRvdG5ldC11c2VyLWp3dHMifQ.hKtmzMRzJ41I-z4fwMmrU_e3D1VE4-29bv2mFcTkpj0
+Content-Type: application/json
+{
+    "Name": "Jack Knox",
+    "Email": "test@mail.com"
+}
+
+###
+
+GET http://localhost:1337/techs/
+Content-Type: application/json
